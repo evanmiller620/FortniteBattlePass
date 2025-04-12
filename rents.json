@@ -1,0 +1,28 @@
+{
+    "name": "San Francisco",
+    "rent": { "all": "$3,397" },
+    "neighborhoods": [
+        { "name": "Central Waterfront - Dogpatch", "rent": { "all": "$3,672" } },
+        { "name": "Downtown District 8 - North East", "rent": { "all": "$2,235" } },
+        { "name": "Duboce Triangle", "rent": { "all": "$4,249" } },
+        { "name": "Financial District - Barbary Coast", "rent": { "all": "$3,822" } },
+        { "name": "Forest Knolls", "rent": { "all": "$3,043" } },
+        { "name": "Hayes Valley", "rent": { "all": "$3,724" } },
+        { "name": "Inner Mission", "rent": { "all": "$3,061" } },
+        { "name": "Lower Pacific Heights", "rent": { "all": "$3,003" } },
+        { "name": "Mission Bay", "rent": { "all": "$4,053" } },
+        { "name": "Mission Dolores", "rent": { "all": "$3,379" } },
+        { "name": "Mission Terrace", "rent": { "all": "$3,766" } },
+        { "name": "Nob Hill", "rent": { "all": "$4,450" } },
+        { "name": "North Waterfront", "rent": { "all": "$2,625" } },
+        { "name": "Pacific Heights", "rent": { "all": "$3,393" } },
+        { "name": "Potrero Hill", "rent": { "all": "$4,061" } },
+        { "name": "Presidio", "rent": { "all": "$4,917" } },
+        { "name": "Russian Hill", "rent": { "all": "$3,921" } },
+        { "name": "South Beach", "rent": { "all": "$4,024" } },
+        { "name": "South of Market", "rent": { "all": "$3,530" } },
+        { "name": "Tenderloin", "rent": { "all": "$2,023" } },
+        { "name": "Van Ness - Civic Center", "rent": { "all": "$3,149" } },
+        { "name": "Yerba Buena", "rent": { "all": "$3,881" } }
+    ]
+}
