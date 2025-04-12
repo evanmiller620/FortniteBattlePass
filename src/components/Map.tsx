@@ -1,6 +1,8 @@
 'use client';
-import { useEffect } from 'react';
+import { useEffect, useRef, useState } from 'react';
 import mapboxgl from 'mapbox-gl';
+import Sidebar from './Sidebar';
+
 mapboxgl.accessToken = process.env.MAPBOX_ACCESS_TOKEN || 'pk.eyJ1Ijoib2poYXIiLCJhIjoiY205ZWdtNTRhMWJmbjJrcHY3MGd3MGcxdCJ9.OSjbsd5Mo7U2t2jw1QH74w';
 
 const fetchPlaces = async (lat: number, lng: number, filter?: string) => {
@@ -13,29 +15,42 @@ const fetchPlaces = async (lat: number, lng: number, filter?: string) => {
 };
 
 const Map = () => {
-    useEffect(() => {
-        const map = new mapboxgl.Map({
-            container: 'map',
-            style: 'mapbox://styles/mapbox/streets-v11',
-            config: {
-                basemap: {
-                    lightPreset: 'dusk',
-                    showPointOfInterestLabels: false,
-                }
-            },
-            center: [-86.9081, 40.4259],
-            zoom: 12,
-        });
+  const markerRef = useRef<mapboxgl.Marker | null>(null);
+  const [places, setPlaces] = useState<any[]>([]);
+  const [isSidebarVisible, setSidebarVisible] = useState(false);
 
-        map.on('click', async (e) => {
-            const places = await fetchPlaces(e.lngLat.lat, e.lngLat.lng);
-            console.log(places);
-        });
+  useEffect(() => {
+    const map = new mapboxgl.Map({
+      container: 'map',
+      style: 'mapbox://styles/mapbox/streets-v11',
+      center: [-86.9081, 40.4259],
+      zoom: 12,
+    });
 
-        return () => map.remove();
-    }, []);
+    map.on('click', async (e) => {
+      // Remove existing marker if it exists
+      if (markerRef.current) {
+        markerRef.current.remove();
+      }
 
-    return <div id="map" style={{ width: '100%', height: '100vh' }} />;
+      markerRef.current = new mapboxgl.Marker()
+        .setLngLat([e.lngLat.lng, e.lngLat.lat])
+        .addTo(map);
+
+      const places = await fetchPlaces(e.lngLat.lat, e.lngLat.lng);
+      setPlaces(places);
+      setSidebarVisible(true);
+    });
+
+    return () => map.remove();
+  }, []);
+
+  return (
+    <div style={{ display: 'flex', height: '100vh' }}>
+      <div id="map" style={{ width: '100%', height: '100%' }} />
+      <Sidebar isVisible={isSidebarVisible} places={places} />
+    </div>
+  );
 };
 
 export default Map;
