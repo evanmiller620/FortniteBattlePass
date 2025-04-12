@@ -1,0 +1,491 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+<meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
+
+<meta charset="utf-8" />
+
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
+
+<link rel="icon" type="image/x-icon" href="/assets/core/favicon.ico"/>
+
+<link rel="canonical" href="https://www.civichub.us/ca/san-francisco/gov/police-department/crime-data/neighborhoods" />
+
+<title>Crime rate and map in San Francisco by neighborhood</title>
+
+<meta name="description" content="San Francisco crime statistics by neighborhood. Categories include Arson, Domestic Violence, Liquor Violation, Stalking, Assault, Drugs Possession, Motor Vehicle Theft, Weapons Possession, Burglary, Robbery, Dating Violence, Hate Crimes, Sex Crimes, and Other Crimes." />
+
+<meta name="keywords" content="" />
+
+<meta http-equiv="imagetoolbar" content="no" />
+
+<meta name="format-detection" content="telephone=no" />
+
+<meta http-equiv="x-rim-auto-match" content="none" />
+
+<meta name="apple-mobile-web-app-capable" content="yes" />
+
+<meta name="msapplication-TileColor" content="#3498db">
+
+<meta name="theme-color" content="#ffffff">
+
+<link rel="apple-touch-icon" sizes="180x180" href="/assets/core/apple-touch-icon.png" />
+
+<link rel="icon" type="image/png" sizes="32x32" href="/assets/core/favicon-32x32.png" />
+
+<link rel="icon" type="image/png" sizes="16x16" href="/assets/core/favicon-16x16.png" />
+
+<link rel="manifest" href="/assets/core/site.webmanifest" />
+
+<link rel="mask-icon" href="/assets/core/safari-pinned-tab.svg" color="#5bbad5" />
+
+
+
+<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+
+<link rel="stylesheet" href="/assets/modules/crime-data/css/style.css?ver=1.0">
+
+<!-- custom css -->
+
+<link rel="stylesheet" type="text/css" href="/assets/core/css/custom-styles.css" />
+
+<link rel="stylesheet" type="text/css" href="/assets/core/css/crime-style.css" />
+
+<link rel="preconnect" href="https://fonts.gstatic.com">
+
+<link href="https://fonts.googleapis.com/css2?family=Exo+2:wght@300;400;500;700&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" type="text/css" href="/assets/core/css/font-awesome.css" />
+
+<link rel="stylesheet" href="/assets/modules/min.css">
+
+<link rel="stylesheet" type="text/css" href="/assets/modules/sfmta-resolutions/css/animate.css" />
+
+<link rel="stylesheet" type="text/css" href="/assets/modules/sfmta-resolutions/css/nav-css.css" />
+
+	<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+
+<!--[if lt IE 9]>
+
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+
+  <![endif]-->
+
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src='https://www.googletagmanager.com/gtag/js?id=UA-142106232-1'></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-142106232-1');
+</script>
+
+</head>
+
+<body id="search">
+
+	<div class="container main_container">
+
+		<header class="main_header">
+
+			<div>
+
+				<div class="logo">
+
+            <a href="https://www.civichub.us/"
+
+               title="Civic Hub"></a>
+
+            <svg viewBox="0 0 8964.779 2424.604">
+
+                <g>
+
+                    <path class="fil0"
+
+                          d="M1417.004 795.966c-226.605,0 -453.21,0 -679.815,0l-40.103 39.144c3.023,239.003 6.043,478.008 9.066,717.011 142.24,-120.133 217.029,-205.559 395.207,-220.707 82.188,-6.988 183.022,38.732 303.97,13.194 111.127,-23.462 138.603,22.958 151.402,67.863 10.159,35.639 -12.852,85.328 -62.415,107.942 -43.495,19.844 -128.207,28.411 -173.151,26.523 -13.148,-0.552 -27.103,25.568 -9.724,31.501 60.766,20.751 290.092,38.25 395.474,-5.28 44.56,-18.406 156.362,-119.008 295.647,-105.09 122.241,12.212 125.058,110.48 0.376,183.919 -134.244,79.066 -116.455,94.653 -255.783,155.236 -77.653,33.773 -214.508,93.287 -281.437,96.243 -76.287,3.358 -450.996,-13.136 -454.969,-8.69l-119.831 128.82c397.788,0 795.576,0 1193.363,0 9.055,-18.047 22.224,-34.172 37.723,-47.826 4.974,-380.219 9.945,-760.436 14.918,-1140.655l-40.064 -39.147c-40.82,0 -60.71,0 -101.531,0 4.652,-29.964 11.625,-61.096 10.466,-93.388 9.221,0 117.696,-0.112 117.696,0.148 46.477,0.017 26.941,35.375 82.72,66.13 18.585,1.185 24.147,35.421 24.076,41.404 -5.174,395.463 -10.346,790.924 -15.52,1186.388 0.714,44.25 -46.107,45.21 -50.129,77.449 -1.94,24.003 -22.034,42.884 -46.535,42.884 -445.01,0 -890.018,0 -1335.028,0 0,-0.039 0,-0.078 0,-0.116 -40.51,0 -61.937,-48.758 -33.926,-78.498l192.292 -205.604c7.206,-6.626 44.775,-22.178 67.983,-24.26 113.984,-10.229 365.644,35.474 459.253,11.239 60.186,-15.579 217.398,-70.746 296.29,-102.479 18.121,-7.287 135.554,-88.214 199.372,-133.059 63.999,-44.975 -11.323,-48.016 -50.874,-35.522 -71.116,22.459 -136.859,84.965 -173.489,100.098 -47.844,19.763 -162.83,35.709 -222.275,32.44 -79.636,-4.376 -167.091,-19.293 -246.108,-25.925 -129.308,-10.852 -123.5,-144.385 -32.959,-169.264 35.497,-9.755 77.105,-4.911 116.867,-4.63 16.469,0.117 81.281,-7.55 102.756,-14.353 31.079,-9.839 21.831,-64.124 -37.02,-48.607 -53.718,14.16 -123.711,11.925 -185.567,2.356 -117.521,-18.178 -248.981,-6.985 -334.108,70.764 -55.138,50.356 -134.588,124.812 -178.523,165.544 -71.09,65.901 -267.32,267.784 -386.521,393.365 -28.436,29.955 -56.878,46.803 -73.151,66.51l-58.2 214.235 2429.391 0 -63.048 -214.235 -26.361 0 0 -0.064c-23.409,0.028 -43.611,-17.534 -46.328,-41.34 -0.636,-5.582 -3.017,-11.213 -6.852,-16.686 -5.196,-7.41 -13.085,-14.705 -23.194,-21.595l0.045 -0.063c-12.096,-8.269 -20.108,-22.108 -20.294,-37.875l-15.514 -1185.935c-1.403,-17.721 7.446,-35.46 24.034,-44.567 10.979,-6.057 20.158,-12.711 27.17,-19.739 4.998,-5.012 8.866,-10.166 11.421,-15.341l48.079 -198.04c3.456,-22.375 22.805,-39.509 46.146,-39.509l135.248 0 -1308.113 -400.962 -1308.103 400.962 135.248 0 0 0.151c21.004,-0.017 40.076,14.283 45.232,35.6l49.071 202.125c2.499,4.956 6.338,10.001 11.33,15.007 7.017,7.034 16.198,13.688 27.181,19.745l-0.043 0.078c14.55,8.004 24.327,23.56 24.119,41.326l-13.945 1066.203 227.164 -235.977c-1.765,-135.706 -3.547,-277.342 -5.312,-418.826 -1.723,-138.097 -3.456,-276.059 -5.174,-408.242 -2.236,-48.666 48.294,-45.422 62.875,-80.161 6.539,-17.896 23.714,-30.678 43.875,-30.678 235.495,0 503.542,0 739.037,0 -10.964,26.478 -26.056,62.261 -32.555,93.388zm-1124.226 1178.476l14.898 -1139.329c-8.715,-6.327 -16.719,-13.126 -23.918,-20.342 -14.259,-14.294 -25.328,-30.352 -32.555,-47.805 -0.995,-2.418 -1.765,-4.875 -2.331,-7.343l-41.273 -170.006 -160.904 0c-25.785,0 -46.694,-20.908 -46.694,-46.694 0,-1.367 0.067,-2.713 0.179,-4.052l-0.081 -72.244c0,-20.93 13.825,-38.629 32.844,-44.468l-0.011 -0.036 1370.396 -420.058c9.312,-2.861 18.838,-2.654 27.489,0.043l1370.272 420.014c20.79,6.387 33.867,26.024 32.83,46.8l-0.084 74.001c0,25.686 -20.825,46.512 -46.512,46.512l0 0.183 -160.9 0 -41.418 170.6c-0.58,2.393 -1.333,4.699 -2.246,6.908l0.06 0.024c-7.157,17.253 -18.228,33.252 -32.571,47.629 -7.195,7.21 -15.196,14.009 -23.908,20.329l14.92 1140.667c10.391,9.158 19.45,19.152 26.955,29.86 4.078,5.818 7.677,11.811 10.764,17.96l27.346 0c22.389,0 41.097,15.763 45.639,36.795l89.581 304.39c7.252,24.678 -6.875,50.568 -31.553,57.819 -4.376,1.287 -8.791,1.895 -13.133,1.899l0 0.109 -2552.745 0c-25.785,0 -46.694,-20.909 -46.694,-46.694 0,-4.77 0.717,-9.373 2.047,-13.71l83.166 -306.133c5.638,-20.8 24.488,-34.478 45.052,-34.468l27.349 -0.006c11.401,-22.723 19.422,-30.116 37.745,-49.151z"/>
+
+                    <g>
+
+                        <polygon class="fil0" points="357.63,770.297 650.409,770.297 650.409,864.346 357.63,864.346 "/>
+
+                    </g>
+
+                    <g>
+
+                        <polygon class="fil0" points="2197.396,770.447 2473.252,770.447 2473.252,864.196 2197.396,864.196 "/>
+
+                    </g>
+
+                    <path class="fil0"
+
+                          d="M1500.655 593.884c-432.754,0 -850.396,0 -1283.151,0 0,-31.536 0,-63.076 0,-94.612 456.782,0 908.912,0 1365.694,0 -31.325,28.048 -62.074,63.079 -82.544,94.612z"/>
+
+                    <path class="fil1"
+
+                          d="M1651.69 1434.478c211.929,15.714 417.356,-127.629 395.957,-340.968 -169.51,-69.665 -434.829,85.518 -395.957,340.968zm-640.3 -520.876c178.15,-57.456 557.821,85.751 496.024,383.441 -271.133,42.494 -429.704,-120.43 -496.024,-383.441zm882.133 -488.081c-259.74,70.544 -541.292,381.513 -293.625,647.913 311.097,-62.91 374.811,-382.995 293.625,-647.913z"/>
+
+                    <path class="fil0"
+
+                          d="M2827.878 593.828c-269.271,0 -553.658,0 -822.928,0 0.872,-30.848 -4.75,-57.838 -11.629,-94.499l834.556 0 0 94.499z"/>
+
+                    <path class="fil2"
+
+                          d="M3133.182 1424.696c0,212.606 171.15,381.629 383.757,381.629 94.613,0 186.031,-32.954 258.32,-103.115 7.442,-7.439 9.565,-21.257 1.063,-28.701l-48.899 -47.836c-6.38,-5.317 -15.945,-6.38 -25.515,1.063 -51.026,39.334 -105.237,70.162 -182.842,70.162 -152.015,0 -267.886,-126.504 -267.886,-275.329 0,-148.824 114.807,-276.392 266.822,-276.392 65.908,0 133.942,27.642 183.906,71.225 9.57,9.57 19.135,9.57 26.578,0l46.773 -47.836c8.506,-8.502 8.506,-21.263 -1.064,-29.765 -72.288,-62.717 -149.888,-98.862 -257.256,-98.862 -212.606,0 -383.757,171.15 -383.757,383.756zm861.91 350.802c0,10.634 9.566,20.199 20.199,20.199l70.162 0c10.629,0 20.193,-9.565 20.193,-20.199l0 -703.73c0,-10.629 -9.565,-20.199 -20.193,-20.199l-70.162 0c-10.633,0 -20.199,9.57 -20.199,20.199l0 703.73zm609.971 19.136c3.185,6.38 10.629,11.691 18.067,11.691l10.634 0c8.502,0 14.882,-5.312 18.071,-11.691l326.351 -715.427c6.38,-13.819 -2.122,-27.638 -18.072,-27.638l-75.474 0c-9.566,0 -15.946,6.38 -18.072,11.692l-233.868 526.205 -6.38 0 -233.868 -526.205c-2.127,-5.313 -9.566,-11.692 -18.072,-11.692l-75.474 0c-15.946,0 -24.452,13.819 -18.072,27.638l324.229 715.427zm548.311 -19.136c0,10.634 9.565,20.199 20.199,20.199l70.161 0c10.629,0 20.194,-9.565 20.194,-20.199l0 -703.73c0,-10.629 -9.566,-20.199 -20.194,-20.199l-70.161 0c-10.634,0 -20.199,9.57 -20.199,20.199l0 703.73zm330.388 -350.802c0,212.606 171.15,381.629 383.751,381.629 94.614,0 186.032,-32.954 258.32,-103.115 7.444,-7.439 9.566,-21.257 1.064,-28.701l-48.899 -47.836c-6.38,-5.317 -15.946,-6.38 -25.515,1.063 -51.026,39.334 -105.238,70.162 -182.843,70.162 -152.014,0 -267.88,-126.504 -267.88,-275.329 0,-148.824 114.803,-276.392 266.817,-276.392 65.908,0 133.942,27.642 183.906,71.225 9.569,9.57 19.135,9.57 26.578,0l46.772 -47.836c8.507,-8.502 8.507,-21.263 -1.063,-29.765 -72.288,-62.717 -149.888,-98.862 -257.257,-98.862 -212.601,0 -383.751,171.15 -383.751,383.756zm1261.822 350.802c0,10.634 9.565,20.199 20.199,20.199l70.161 0c11.692,0 20.194,-9.565 20.194,-20.199l0 -307.219 389.073 0 0 307.219c0,10.634 8.506,20.199 20.198,20.199l70.162 0c10.629,0 20.199,-9.565 20.199,-20.199l0 -703.73c0,-10.629 -9.57,-20.199 -20.199,-20.199l-70.162 0c-11.691,0 -20.198,9.57 -20.198,20.199l0 296.586 -389.073 0 0 -296.586c0,-10.629 -8.502,-20.199 -20.194,-20.199l-70.161 0c-10.634,0 -20.199,9.57 -20.199,20.199l0 703.73zm874.665 -257.256c0,161.585 121.187,288.083 288.084,288.083 167.96,0 290.21,-126.499 290.21,-288.083l0 -446.474c0,-10.629 -9.565,-20.199 -20.199,-20.199l-71.219 0c-11.697,0 -20.199,9.57 -20.199,20.199l0 441.161c0,105.243 -69.098,187.096 -178.593,187.096 -108.428,0 -176.462,-82.917 -176.462,-189.223l0 -439.035c0,-10.629 -8.507,-20.199 -20.199,-20.199l-71.225 0c-10.629,0 -20.199,9.57 -20.199,20.199l0 446.474zm842.78 257.256c0,10.634 8.502,20.199 20.199,20.199l249.813 0c133.938,0 231.737,-86.107 231.737,-205.167 0,-97.799 -76.537,-149.888 -132.875,-173.277 49.958,-28.7 110.55,-87.165 110.55,-169.023 0,-111.617 -92.482,-196.661 -221.104,-196.661l-238.121 0c-11.697,0 -20.199,9.57 -20.199,20.199l0 703.73zm108.428 -400.764l0 -223.239 143.512 0c68.034,0 109.49,44.651 109.49,109.495 0,63.781 -41.456,113.745 -109.49,113.745l-143.512 0zm-1.06 323.165l0 -227.493 145.635 0c69.098,0 130.749,46.777 130.749,111.622 0,65.908 -49.958,115.871 -114.803,115.871l-161.58 0z"/>
+
+                </g>
+
+            </svg>
+
+</div>				<!-- Static navbar -->
+
+				<div class="main-nav">
+
+					<nav class="navbar navbar-expand-md navbar-light btco-hover-menu">
+
+						<!--   <a class="navbar-brand" href="#">Navbar</a> -->
+
+						<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation"> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
+
+						<div class="collapse navbar-collapse" id="navbarNavDropdown">
+
+							<ul class="nav navbar-nav">
+
+								<li class="gov-icon"><a href="https://www.civichub.us/ca/san-francisco/gov"><em></em>SF Gov</a></li>
+
+								<li class="project-icon"><a href="https://www.civichub.us/ca/san-francisco/gov/police-department"><em></em>Police Department</a></li>
+
+								<li class="project-icon"><a href="https://www.civichub.us/ca/san-francisco/gov/police-department/crime-data"><em></em>Crime Rate</a></li>
+
+								<li class="project-icon"><a href="https://www.civichub.us/ca/san-francisco/gov/police-department/crime-data/neighborhoods"><em></em>Neighborhoods</a></li>
+
+								<li class="contact-icon"><a href="https://www.civichub.us/contact"><em></em>Contact</a></li>
+
+																	<li class="login-icon"><a href="https://www.civichub.us/login"><em></em>Login</a></li>
+
+															</ul>
+
+						</div>
+
+					</nav>
+
+				</div>
+
+			</div>
+
+			<!-- main_header -->
+
+		</header>
+
+		<!--===============================Header=========================================-->
+
+		<!--CONTENT-->
+
+	<div class="hn1">	
+
+	</div>
+
+		<main id="page-content" class="grid-item" role="main">
+
+			<h1>San Francisco Crime rate and map by the neighborhood</h1>
+
+			<div>
+
+								<a class="ui-accordion-content" href="https://www.civichub.us/ca/san-francisco/gov/police-department/crime-data/alamo-square">Alamo Square</a><br>
+
+								<a class="ui-accordion-content" href="https://www.civichub.us/ca/san-francisco/gov/police-department/crime-data/anza-vista">Anza Vista</a><br>
+
+								<a class="ui-accordion-content" href="https://www.civichub.us/ca/san-francisco/gov/police-department/crime-data/apparel-city">Apparel City</a><br>
+
+								<a class="ui-accordion-content" href="https://www.civichub.us/ca/san-francisco/gov/police-department/crime-data/fort-mason-aquatic-park">Aquatic Park / Ft. Mason</a><br>
+
+								<a class="ui-accordion-content" href="https://www.civichub.us/ca/san-francisco/gov/police-department/crime-data/ashbury-heights">Ashbury Heights</a><br>
+
+								<a class="ui-accordion-content" href="https://www.civichub.us/ca/san-francisco/gov/police-department/crime-data/balboa-terrace">Balboa Terrace</a><br>
+
+								<a class="ui-accordion-content" href="https://www.civichub.us/ca/san-francisco/gov/police-department/crime-data/bayview">Bayview</a><br>
+
+								<a class="ui-accordion-content" href="https://www.civichub.us/ca/san-francisco/gov/police-department/crime-data/bernal-heights">Bernal Heights</a><br>
+
+								<a class="ui-accordion-content" href="https://www.civichub.us/ca/san-francisco/gov/police-department/crime-data/bret-harte">Bret Harte</a><br>
+
+								<a class="ui-accordion-content" href="https://www.civichub.us/ca/san-francisco/gov/police-department/crime-data/buena-vista">Buena Vista</a><br>
+
+								<a class="ui-accordion-content" href="https://www.civichub.us/ca/san-francisco/gov/police-department/crime-data/candlestick-point">Candlestick Point SRA</a><br>
+
+								<a class="ui-accordion-content" href="https://www.civichub.us/ca/san-francisco/gov/police-department/crime-data/castro">Castro</a><br>
+
+								<a class="ui-accordion-content" href="https://www.civichub.us/ca/san-francisco/gov/police-department/crime-data/cathedral-hill">Cathedral Hill</a><br>
+
+								<a class="ui-accordion-content" href="https://www.civichub.us/ca/san-francisco/gov/police-department/crime-data/cayuga">Cayuga</a><br>
+
+								<a class="ui-accordion-content" href="https://www.civichub.us/ca/san-francisco/gov/police-department/crime-data/central-waterfront">Central Waterfront</a><br>
+
+								<a class="ui-accordion-content" href="https://www.civichub.us/ca/san-francisco/gov/police-department/crime-data/chinatown">Chinatown</a><br>
+
+								<a class="ui-accordion-content" href="https://www.civichub.us/ca/san-francisco/gov/police-department/crime-data/civic-center">Civic Center</a><br>
+
+								<a class="ui-accordion-content" href="https://www.civichub.us/ca/san-francisco/gov/police-department/crime-data/clarendon-heights">Clarendon Heights</a><br>
+
+								<a class="ui-accordion-content" href="https://www.civichub.us/ca/san-francisco/gov/police-department/crime-data/cole-valley">Cole Valley</a><br>
+
+								<a class="ui-accordion-content" href="https://www.civichub.us/ca/san-francisco/gov/police-department/crime-data/corona-heights">Corona Heights</a><br>
+
+								<a class="ui-accordion-content" href="https://www.civichub.us/ca/san-francisco/gov/police-department/crime-data/cow-hollow">Cow Hollow</a><br>
+
+								<a class="ui-accordion-content" href="https://www.civichub.us/ca/san-francisco/gov/police-department/crime-data/crocker-amazon">Crocker Amazon</a><br>
+
+								<a class="ui-accordion-content" href="https://www.civichub.us/ca/san-francisco/gov/police-department/crime-data/diamond-heights">Diamond Heights</a><br>
+
+								<a class="ui-accordion-content" href="https://www.civichub.us/ca/san-francisco/gov/police-department/crime-data/dogpatch">Dogpatch</a><br>
+
+								<a class="ui-accordion-content" href="https://www.civichub.us/ca/san-francisco/gov/police-department/crime-data/dolores-heights">Dolores Heights</a><br>
+
+								<a class="ui-accordion-content" href="https://www.civichub.us/ca/san-francisco/gov/police-department/crime-data/union-square">Downtown / Union Square</a><br>
+
+								<a class="ui-accordion-content" href="https://www.civichub.us/ca/san-francisco/gov/police-department/crime-data/duboce-triangle">Duboce Triangle</a><br>
+
+								<a class="ui-accordion-content" href="https://www.civichub.us/ca/san-francisco/gov/police-department/crime-data/eureka-valley">Eureka Valley</a><br>
+
+								<a class="ui-accordion-content" href="https://www.civichub.us/ca/san-francisco/gov/police-department/crime-data/excelsior">Excelsior</a><br>
+
+								<a class="ui-accordion-content" href="https://www.civichub.us/ca/san-francisco/gov/police-department/crime-data/fairmount">Fairmount</a><br>
+
+								<a class="ui-accordion-content" href="https://www.civichub.us/ca/san-francisco/gov/police-department/crime-data/financial-district">Financial District</a><br>
+
+								<a class="ui-accordion-content" href="https://www.civichub.us/ca/san-francisco/gov/police-department/crime-data/fishermans-wharf">Fisherman's Wharf</a><br>
+
+								<a class="ui-accordion-content" href="https://www.civichub.us/ca/san-francisco/gov/police-department/crime-data/forest-hill">Forest Hill</a><br>
+
+								<a class="ui-accordion-content" href="https://www.civichub.us/ca/san-francisco/gov/police-department/crime-data/forest-knolls">Forest Knolls</a><br>
+
+								<a class="ui-accordion-content" href="https://www.civichub.us/ca/san-francisco/gov/police-department/crime-data/glen-park">Glen Park</a><br>
+
+								<a class="ui-accordion-content" href="https://www.civichub.us/ca/san-francisco/gov/police-department/crime-data/golden-gate-heights">Golden Gate Heights</a><br>
+
+								<a class="ui-accordion-content" href="https://www.civichub.us/ca/san-francisco/gov/police-department/crime-data/golden-gate-park">Golden Gate Park</a><br>
+
+								<a class="ui-accordion-content" href="https://www.civichub.us/ca/san-francisco/gov/police-department/crime-data/haight-ashbury">Haight Ashbury</a><br>
+
+								<a class="ui-accordion-content" href="https://www.civichub.us/ca/san-francisco/gov/police-department/crime-data/hayes-valley">Hayes Valley</a><br>
+
+								<a class="ui-accordion-content" href="https://www.civichub.us/ca/san-francisco/gov/police-department/crime-data/holly-park">Holly Park</a><br>
+
+								<a class="ui-accordion-content" href="https://www.civichub.us/ca/san-francisco/gov/police-department/crime-data/hunters-point">Hunters Point</a><br>
+
+								<a class="ui-accordion-content" href="https://www.civichub.us/ca/san-francisco/gov/police-department/crime-data/india-basin">India Basin</a><br>
+
+								<a class="ui-accordion-content" href="https://www.civichub.us/ca/san-francisco/gov/police-department/crime-data/ingleside">Ingleside</a><br>
+
+								<a class="ui-accordion-content" href="https://www.civichub.us/ca/san-francisco/gov/police-department/crime-data/ingleside-terraces">Ingleside Terraces</a><br>
+
+								<a class="ui-accordion-content" href="https://www.civichub.us/ca/san-francisco/gov/police-department/crime-data/inner-richmond">Inner Richmond</a><br>
+
+								<a class="ui-accordion-content" href="https://www.civichub.us/ca/san-francisco/gov/police-department/crime-data/inner-sunset">Inner Sunset</a><br>
+
+								<a class="ui-accordion-content" href="https://www.civichub.us/ca/san-francisco/gov/police-department/crime-data/japantown">Japantown</a><br>
+
+								<a class="ui-accordion-content" href="https://www.civichub.us/ca/san-francisco/gov/police-department/crime-data/laguna-honda">Laguna Honda</a><br>
+
+								<a class="ui-accordion-content" href="https://www.civichub.us/ca/san-francisco/gov/police-department/crime-data/lakeshore">Lakeshore</a><br>
+
+								<a class="ui-accordion-content" href="https://www.civichub.us/ca/san-francisco/gov/police-department/crime-data/lake-street">Lake Street</a><br>
+
+								<a class="ui-accordion-content" href="https://www.civichub.us/ca/san-francisco/gov/police-department/crime-data/laurel-heights">Laurel Heights / Jordan Park</a><br>
+
+								<a class="ui-accordion-content" href="https://www.civichub.us/ca/san-francisco/gov/police-department/crime-data/lincoln-park-fort-miley">Lincoln Park / Ft. Miley</a><br>
+
+								<a class="ui-accordion-content" href="https://www.civichub.us/ca/san-francisco/gov/police-department/crime-data/little-hollywood">Little Hollywood</a><br>
+
+								<a class="ui-accordion-content" href="https://www.civichub.us/ca/san-francisco/gov/police-department/crime-data/lone-mountain">Lone Mountain</a><br>
+
+								<a class="ui-accordion-content" href="https://www.civichub.us/ca/san-francisco/gov/police-department/crime-data/lower haight">Lower Haight</a><br>
+
+								<a class="ui-accordion-content" href="https://www.civichub.us/ca/san-francisco/gov/police-department/crime-data/lower-nob-hill">Lower Nob Hill</a><br>
+
+								<a class="ui-accordion-content" href="https://www.civichub.us/ca/san-francisco/gov/police-department/crime-data/lower-pacific-heights">Lower Pacific Heights</a><br>
+
+								<a class="ui-accordion-content" href="https://www.civichub.us/ca/san-francisco/gov/police-department/crime-data/marina">Marina</a><br>
+
+								<a class="ui-accordion-content" href="https://www.civichub.us/ca/san-francisco/gov/police-department/crime-data/mclaren-park">McLaren Park</a><br>
+
+								<a class="ui-accordion-content" href="https://www.civichub.us/ca/san-francisco/gov/police-department/crime-data/merced-heights">Merced Heights</a><br>
+
+								<a class="ui-accordion-content" href="https://www.civichub.us/ca/san-francisco/gov/police-department/crime-data/merced-manor">Merced Manor</a><br>
+
+								<a class="ui-accordion-content" href="https://www.civichub.us/ca/san-francisco/gov/police-department/crime-data/midtown-terrace">Midtown Terrace</a><br>
+
+								<a class="ui-accordion-content" href="https://www.civichub.us/ca/san-francisco/gov/police-department/crime-data/mint-hill">Mint Hill</a><br>
+
+								<a class="ui-accordion-content" href="https://www.civichub.us/ca/san-francisco/gov/police-department/crime-data/miraloma-park">Miraloma Park</a><br>
+
+								<a class="ui-accordion-content" href="https://www.civichub.us/ca/san-francisco/gov/police-department/crime-data/mission">Mission</a><br>
+
+								<a class="ui-accordion-content" href="https://www.civichub.us/ca/san-francisco/gov/police-department/crime-data/mission-bay">Mission Bay</a><br>
+
+								<a class="ui-accordion-content" href="https://www.civichub.us/ca/san-francisco/gov/police-department/crime-data/mission-dolores">Mission Dolores</a><br>
+
+								<a class="ui-accordion-content" href="https://www.civichub.us/ca/san-francisco/gov/police-department/crime-data/mission-terrace">Mission Terrace</a><br>
+
+								<a class="ui-accordion-content" href="https://www.civichub.us/ca/san-francisco/gov/police-department/crime-data/monterey-heights">Monterey Heights</a><br>
+
+								<a class="ui-accordion-content" href="https://www.civichub.us/ca/san-francisco/gov/police-department/crime-data/mount-davidson-manor">Mt. Davidson Manor</a><br>
+
+								<a class="ui-accordion-content" href="https://www.civichub.us/ca/san-francisco/gov/police-department/crime-data/nob-hill">Nob Hill</a><br>
+
+								<a class="ui-accordion-content" href="https://www.civichub.us/ca/san-francisco/gov/police-department/crime-data/noe-valley">Noe Valley</a><br>
+
+								<a class="ui-accordion-content" href="https://www.civichub.us/ca/san-francisco/gov/police-department/crime-data/north-beach">North Beach</a><br>
+
+								<a class="ui-accordion-content" href="https://www.civichub.us/ca/san-francisco/gov/police-department/crime-data/northern-waterfront">Northern Waterfront</a><br>
+
+								<a class="ui-accordion-content" href="https://www.civichub.us/ca/san-francisco/gov/police-department/crime-data/oceanview">Oceanview</a><br>
+
+								<a class="ui-accordion-content" href="https://www.civichub.us/ca/san-francisco/gov/police-department/crime-data/outer-mission">Outer Mission</a><br>
+
+								<a class="ui-accordion-content" href="https://www.civichub.us/ca/san-francisco/gov/police-department/crime-data/outer-richmond">Outer Richmond</a><br>
+
+								<a class="ui-accordion-content" href="https://www.civichub.us/ca/san-francisco/gov/police-department/crime-data/outer-sunset">Outer Sunset</a><br>
+
+								<a class="ui-accordion-content" href="https://www.civichub.us/ca/san-francisco/gov/police-department/crime-data/pacific-heights">Pacific Heights</a><br>
+
+								<a class="ui-accordion-content" href="https://www.civichub.us/ca/san-francisco/gov/police-department/crime-data/panhandle">Panhandle</a><br>
+
+								<a class="ui-accordion-content" href="https://www.civichub.us/ca/san-francisco/gov/police-department/crime-data/parkmerced">Parkmerced</a><br>
+
+								<a class="ui-accordion-content" href="https://www.civichub.us/ca/san-francisco/gov/police-department/crime-data/parkside">Parkside</a><br>
+
+								<a class="ui-accordion-content" href="https://www.civichub.us/ca/san-francisco/gov/police-department/crime-data/parnassus-heights">Parnassus Heights</a><br>
+
+								<a class="ui-accordion-content" href="https://www.civichub.us/ca/san-francisco/gov/police-department/crime-data/peralta-heights">Peralta Heights</a><br>
+
+								<a class="ui-accordion-content" href="https://www.civichub.us/ca/san-francisco/gov/police-department/crime-data/polk-gulch">Polk Gulch</a><br>
+
+								<a class="ui-accordion-content" href="https://www.civichub.us/ca/san-francisco/gov/police-department/crime-data/portola">Portola</a><br>
+
+								<a class="ui-accordion-content" href="https://www.civichub.us/ca/san-francisco/gov/police-department/crime-data/potrero-hill">Potrero Hill</a><br>
+
+								<a class="ui-accordion-content" href="https://www.civichub.us/ca/san-francisco/gov/police-department/crime-data/presidio-heights">Presidio Heights</a><br>
+
+								<a class="ui-accordion-content" href="https://www.civichub.us/ca/san-francisco/gov/police-department/crime-data/presidio">Presidio National Park</a><br>
+
+								<a class="ui-accordion-content" href="https://www.civichub.us/ca/san-francisco/gov/police-department/crime-data/presidio-terrace">Presidio Terrace</a><br>
+
+								<a class="ui-accordion-content" href="https://www.civichub.us/ca/san-francisco/gov/police-department/crime-data/produce-market">Produce Market</a><br>
+
+								<a class="ui-accordion-content" href="https://www.civichub.us/ca/san-francisco/gov/police-department/crime-data/rincon-hill">Rincon Hill</a><br>
+
+								<a class="ui-accordion-content" href="https://www.civichub.us/ca/san-francisco/gov/police-department/crime-data/russian-hill">Russian Hill</a><br>
+
+								<a class="ui-accordion-content" href="https://www.civichub.us/ca/san-francisco/gov/police-department/crime-data/seacliff">Seacliff</a><br>
+
+								<a class="ui-accordion-content" href="https://www.civichub.us/ca/san-francisco/gov/police-department/crime-data/showplace-square">Showplace Square</a><br>
+
+								<a class="ui-accordion-content" href="https://www.civichub.us/ca/san-francisco/gov/police-department/crime-data/silver-terrace">Silver Terrace</a><br>
+
+								<a class="ui-accordion-content" href="https://www.civichub.us/ca/san-francisco/gov/police-department/crime-data/south-beach">South Beach</a><br>
+
+								<a class="ui-accordion-content" href="https://www.civichub.us/ca/san-francisco/gov/police-department/crime-data/south-of-market">South of Market</a><br>
+
+								<a class="ui-accordion-content" href="https://www.civichub.us/ca/san-francisco/gov/police-department/crime-data/st-francis-wood">St. Francis Wood</a><br>
+
+								<a class="ui-accordion-content" href="https://www.civichub.us/ca/san-francisco/gov/police-department/crime-data/st-marys-park">St. Marys Park</a><br>
+
+								<a class="ui-accordion-content" href="https://www.civichub.us/ca/san-francisco/gov/police-department/crime-data/stonestown">Stonestown</a><br>
+
+								<a class="ui-accordion-content" href="https://www.civichub.us/ca/san-francisco/gov/police-department/crime-data/sunnydale">Sunnydale</a><br>
+
+								<a class="ui-accordion-content" href="https://www.civichub.us/ca/san-francisco/gov/police-department/crime-data/sunnyside">Sunnyside</a><br>
+
+								<a class="ui-accordion-content" href="https://www.civichub.us/ca/san-francisco/gov/police-department/crime-data/sutro-heights">Sutro Heights</a><br>
+
+								<a class="ui-accordion-content" href="https://www.civichub.us/ca/san-francisco/gov/police-department/crime-data/telegraph-hill">Telegraph Hill</a><br>
+
+								<a class="ui-accordion-content" href="https://www.civichub.us/ca/san-francisco/gov/police-department/crime-data/tenderloin">Tenderloin</a><br>
+
+								<a class="ui-accordion-content" href="https://www.civichub.us/ca/san-francisco/gov/police-department/crime-data/treasure-island">Treasure Island</a><br>
+
+								<a class="ui-accordion-content" href="https://www.civichub.us/ca/san-francisco/gov/police-department/crime-data/union-street">Union Street</a><br>
+
+								<a class="ui-accordion-content" href="https://www.civichub.us/ca/san-francisco/gov/police-department/crime-data/university-mound">University Mound</a><br>
+
+								<a class="ui-accordion-content" href="https://www.civichub.us/ca/san-francisco/gov/police-department/crime-data/upper-market">Upper Market</a><br>
+
+								<a class="ui-accordion-content" href="https://www.civichub.us/ca/san-francisco/gov/police-department/crime-data/visitacion-valley">Visitacion Valley</a><br>
+
+								<a class="ui-accordion-content" href="https://www.civichub.us/ca/san-francisco/gov/police-department/crime-data/western-addition">Western Addition</a><br>
+
+								<a class="ui-accordion-content" href="https://www.civichub.us/ca/san-francisco/gov/police-department/crime-data/west-portal">West Portal</a><br>
+
+								<a class="ui-accordion-content" href="https://www.civichub.us/ca/san-francisco/gov/police-department/crime-data/westwood-highlands">Westwood Highlands</a><br>
+
+								<a class="ui-accordion-content" href="https://www.civichub.us/ca/san-francisco/gov/police-department/crime-data/westwood-park">Westwood Park</a><br>
+
+								<a class="ui-accordion-content" href="https://www.civichub.us/ca/san-francisco/gov/police-department/crime-data/yerba-buena-island">Yerba Buena Island</a><br>
+
+								<a class="ui-accordion-content" href="https://www.civichub.us/ca/san-francisco/gov/police-department/crime-data/sherwood-forest"></a><br>
+
+							</div>
+
+		</main>
+
+	</div>
+
+	<div id="controls-lower" class="col-xs-12 col-sm-12 col-md-12 col-lg-12" style="padding:0px !important;">
+
+		<div id="sfim-table" class="col-xs-12 col-sm-12 col-md-12 col-lg-12" style="padding:0px !important;">
+
+			<div id="ViewDataSet">
+
+				<div id="ViewDataSetInfo" class="table-wrapper"></div>
+
+			</div>
+
+
+
+		</div>
+
+	</div>
+
+	<!--======================Footer================================-->
+
+	<footer class="main_footer">
+
+		<div class="resolution">
+
+			<div class="footer_content">
+
+
+
+			</div>
+
+		</div>
+
+		<div class="copyright">
+
+			© 2015-2022 Civic Hub | Made in San Francisco</div>
+
+	</footer>
+
+
+
+	</div>
+
+
+
+	<!-- Load jQuery from Google's CDN, so that it is likely to be already in the client's cache -->
+
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+
+	<script src="/assets/modules/crime-data/js/config.js"></script>
+
+</div>
+
+</body>
+
+</html>	
