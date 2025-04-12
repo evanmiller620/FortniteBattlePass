@@ -24,6 +24,7 @@ export async function GET(req: NextRequest) {
     {
       name: 'Cactus Café',
       category: 'cafe',
+      description: 'Fortnite battle pass!',
       coordinates: [latitude, longitude],
     },
   ];

@@ -1,7 +1,7 @@
 import Head from 'next/head';
 import Map from '../components/Map';
 import MenuBar from '../components/MenuBar';
-
+import MapboxGeocoderComponent from '../components/MapboxGeocoder';
 const Home = () => (
   <>
     <Head>
