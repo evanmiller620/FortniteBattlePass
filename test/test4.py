@@ -1,5 +1,7 @@
 import requests
 from bs4 import BeautifulSoup
+import time
+import csv
 
 url = "https://www.civichub.us/ca/san-francisco/gov/police-department/crime-data/neighborhoods"
 response = requests.get(url)
@@ -14,6 +16,7 @@ links = soup.find_all("a", class_="ui-accordion-content", href=True)
 hrefs = [link["href"] for link in links]
 
 print("Found hrefs:")
+# print(hrefs)
 for url in hrefs:
     # 1. Request the page
     response = requests.get(url)
@@ -46,3 +49,4 @@ for url in hrefs:
     print("Table contents:")
     for row in table_data:
         print(row)
+    time.sleep(3)
