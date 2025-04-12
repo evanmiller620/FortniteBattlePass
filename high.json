@@ -1,0 +1,231 @@
+[
+    {
+        "name": "Lowell High School",
+        "location": "San Francisco, CA",
+        "district": "San Francisco Unified School District",
+        "rankings": {
+            "San Francisco Unified School District Rankings": "# 1",
+            "California Rankings": "#7"
+        },
+        "stats": {
+            "Graduation Rate": "98%",
+            "College Readiness": "86.2",
+            "Enrollment 9-12": "2,632"
+        }
+    },
+    {
+        "name": "Ruth Asawa San Francisco School of the Arts",
+        "location": "San Francisco, CA",
+        "district": "San Francisco Unified School District",
+        "rankings": {
+            "San Francisco Unified School District Rankings": "# 2",
+            "California Rankings": "#61"
+        },
+        "stats": {
+            "Graduation Rate": "97%",
+            "College Readiness": "61.2",
+            "Enrollment 9-12": "679"
+        }
+    },
+    {
+        "name": "George Washington High School",
+        "location": "San Francisco, CA",
+        "district": "San Francisco Unified School District",
+        "rankings": {
+            "San Francisco Unified School District Rankings": "# 3",
+            "California Rankings": "#177"
+        },
+        "stats": {
+            "Graduation Rate": "93%",
+            "College Readiness": "50.1",
+            "Enrollment 9-12": "2,036"
+        }
+    },
+    {
+        "name": "Balboa High School",
+        "location": "San Francisco, CA",
+        "district": "San Francisco Unified School District",
+        "rankings": {
+            "San Francisco Unified School District Rankings": "# 4",
+            "California Rankings": "#221"
+        },
+        "stats": {
+            "Graduation Rate": "96%",
+            "College Readiness": "42.0",
+            "Enrollment 9-12": "1,278"
+        }
+    },
+    {
+        "name": "Abraham Lincoln High School",
+        "location": "San Francisco, CA",
+        "district": "San Francisco Unified School District",
+        "rankings": {
+            "San Francisco Unified School District Rankings": "# 5",
+            "California Rankings": "#223"
+        },
+        "stats": {
+            "Graduation Rate": "94%",
+            "College Readiness": "56.8",
+            "Enrollment 9-12": "1,997"
+        }
+    },
+    {
+        "name": "Galileo High School",
+        "location": "San Francisco, CA",
+        "district": "San Francisco Unified School District",
+        "rankings": {
+            "San Francisco Unified School District Rankings": "# 6",
+            "California Rankings": "#245"
+        },
+        "stats": {
+            "Graduation Rate": "92%",
+            "College Readiness": "46.4",
+            "Enrollment 9-12": "1,826"
+        }
+    },
+    {
+        "name": "Raoul Wallenberg High School",
+        "location": "San Francisco, CA",
+        "district": "San Francisco Unified School District",
+        "rankings": {
+            "San Francisco Unified School District Rankings": "# 7",
+            "California Rankings": "#407"
+        },
+        "stats": {
+            "Graduation Rate": "94%",
+            "College Readiness": "25.7",
+            "Enrollment 9-12": "549"
+        }
+    },
+    {
+        "name": "Phillip and Sala Burton Academic High School",
+        "location": "San Francisco, CA",
+        "district": "San Francisco Unified School District",
+        "rankings": {
+            "San Francisco Unified School District Rankings": "# 8",
+            "California Rankings": "#538"
+        },
+        "stats": {
+            "Graduation Rate": "95%",
+            "College Readiness": "36.5",
+            "Enrollment 9-12": "1,060"
+        }
+    },
+    {
+        "name": "Academy of Arts and Sciences",
+        "location": "San Francisco, CA",
+        "district": "San Francisco Unified School District",
+        "rankings": {
+            "San Francisco Unified School District Rankings": "# 9",
+            "California Rankings": "#658"
+        },
+        "stats": {
+            "Graduation Rate": "94%",
+            "College Readiness": "30.1",
+            "Enrollment 9-12": "320"
+        }
+    },
+    {
+        "name": "O'Connell (John) High School",
+        "location": "San Francisco, CA",
+        "district": "San Francisco Unified School District",
+        "rankings": {
+            "San Francisco Unified School District Rankings": "# 10",
+            "California Rankings": "#1,019"
+        },
+        "stats": {
+            "Graduation Rate": "90%",
+            "College Readiness": "35.9",
+            "Enrollment 9-12": "506"
+        }
+    },
+    {
+        "name": "Mission High School",
+        "location": "San Francisco, CA",
+        "district": "San Francisco Unified School District",
+        "rankings": {
+            "San Francisco Unified School District Rankings": "# 11",
+            "California Rankings": "#1,170"
+        },
+        "stats": {
+            "Graduation Rate": "80%",
+            "College Readiness": "24.1",
+            "Enrollment 9-12": "1,041"
+        }
+    },
+    {
+        "name": "Jordan School for Equity",
+        "location": "San Francisco, CA",
+        "district": "San Francisco Unified School District",
+        "rankings": {
+            "San Francisco Unified School District Rankings": "# 12-14",
+            "California Rankings": "#1,317-1,652"
+        },
+        "stats": {
+            "Graduation Rate": "80%",
+            "College Readiness": "N/A",
+            "Enrollment 9-12": "201"
+        }
+    },
+    {
+        "name": "S.F. International High School",
+        "location": "San Francisco, CA",
+        "district": "San Francisco Unified School District",
+        "rankings": {
+            "San Francisco Unified School District Rankings": "# 12-14",
+            "California Rankings": "#1,317-1,652"
+        },
+        "stats": {
+            "Graduation Rate": "43%",
+            "College Readiness": "33.5",
+            "Enrollment 9-12": "401"
+        }
+    },
+    {
+        "name": "Thurgood Marshall High School",
+        "location": "San Francisco, CA",
+        "district": "San Francisco Unified School District",
+        "rankings": {
+            "San Francisco Unified School District Rankings": "# 12-14",
+            "California Rankings": "#1,317-1,652"
+        },
+        "stats": {
+            "Graduation Rate": "72%",
+            "College Readiness": "N/A",
+            "Enrollment 9-12": "457"
+        }
+    },
+    {
+        "name": "Downtown High School",
+        "location": "San Francisco, CA",
+        "district": "San Francisco Unified School District",
+        "rankings": {},
+        "stats": {
+            "Graduation Rate": "60%",
+            "College Readiness": "N/A",
+            "Enrollment 9-12": "103"
+        }
+    },
+    {
+        "name": "Independence High School",
+        "location": "San Francisco, CA",
+        "district": "San Francisco Unified School District",
+        "rankings": {},
+        "stats": {
+            "Graduation Rate": "95%",
+            "College Readiness": "N/A",
+            "Enrollment 9-12": "205"
+        }
+    },
+    {
+        "name": "Wells (Ida B.) High School",
+        "location": "San Francisco, CA",
+        "district": "San Francisco Unified School District",
+        "rankings": {},
+        "stats": {
+            "Graduation Rate": "59%",
+            "College Readiness": "N/A",
+            "Enrollment 9-12": "152"
+        }
+    }
+]
